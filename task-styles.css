@@ -49,9 +49,24 @@ table {
 
 /*My code starts here*/
 
+body {
+    background-color: rgba(201,231,202,255);
+    color: rgba(64,112,91,255)
+}
+
+a {
+    font-style: none;
+    color: inherit;
+}
+
 .container {
-    max-width: 90%;
     text-align: center;
+    min-width: 300px;
+}
+
+header {
+    color: rgba(201,231,202,255);
+    background-color: rgba(64,112,91,255)
 }
 
 h1 {
@@ -60,11 +75,26 @@ h1 {
     line-height: 50px;
 }
 
+.nav {
+    display: block;
+}
 
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 0 20%;
+    
+}
+
+.nav div {
+    font-size: 0.8em;
+    line-height: 30px;
+}
 
 section {
     line-height: 30px;
-    margin: 40% 0 40% 0;
+    margin: 50% 0 40% 0;
 }
 
 h2 {
@@ -73,10 +103,21 @@ h2 {
 }
 
 footer {
+    color: rgba(201,231,202,255);
+    background-color: rgba(64,112,91,255);
     font-size: small;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
+    line-height: 20px;    
+}
+
+@media screen and (min-width: 480) {
+    .container {
+        max-width: 480px;
+    }
+
+
 }
