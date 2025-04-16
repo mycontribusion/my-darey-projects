@@ -50,74 +50,129 @@ table {
 /*My code starts here*/
 
 body {
-    background-color: rgba(201,231,202,255);
+    background-color: white;
     color: rgba(64,112,91,255)
 }
 
-a {
-    font-style: none;
-    color: inherit;
+header > div {
+    background-color: rgba(64,112,91,255);
+    color: rgba(201,231,202,255);
+    margin-bottom: 20px;
 }
 
-.container {
-    text-align: center;
-    min-width: 300px;
+img {
+    height: 3em;
+    width: 3em;
+}
+
+header img {
+    margin-top: 2em;
 }
 
 header {
-    color: rgba(201,231,202,255);
-    background-color: rgba(64,112,91,255)
+    text-align: center;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 2.5em;
+    margin: 20px;
     font-weight: bold;
-    line-height: 50px;
 }
 
-.nav {
-    display: block;
+button { 
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: rgba(64,112,91,255);
+    background-color: rgba(201,231,202,255);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    padding: 0 20%;
-    
-}
-
-.nav div {
-    font-size: 0.8em;
-    line-height: 30px;
+.to-rt {
+    display: none;
 }
 
 section {
-    line-height: 30px;
-    margin: 50% 0 40% 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px 20px;
+}
+
+section > div {
+    text-align: center;
+    background: rgba(201,231,202,255);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
 }
 
 h2 {
     font-weight: bold;
-    line-height: 50px;
+    line-height: 2.5em;
+}
+
+section p {
+    padding: 10px 20px;
+    line-height: 2em;
+
 }
 
 footer {
-    color: rgba(201,231,202,255);
-    background-color: rgba(64,112,91,255);
-    font-size: small;
-    position: fixed;
-    left: 0;
+    position: static;
     bottom: 0;
     width: 100%;
     text-align: center;
-    line-height: 20px;    
+    font-size: 0.8em;
+    line-height: 2em;
+    background-color: rgba(64,112,91,255);
+    color: rgba(201,231,202,255);
+    z-index: 999;
+    margin-top: 20px;
 }
 
-@media screen and (min-width: 480) {
-    .container {
-        max-width: 480px;
+@media screen and (min-height : 487px) {
+
+}
+
+@media screen and (min-width : 487px) {
+    footer {
+        display: flex;
+        justify-content: center;
     }
 
+    footer > p {
+        padding: 0 10px;
+    }
+}
 
+@media screen and (min-width : 759px) {
+    footer {
+        position: fixed;
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    .to-rt {
+        display: block;
+        margin-right: 4em;
+        line-height: 2em;
+    }
+    header > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header img {
+        margin-top: 0;
+        height: 4em;
+        width: 4em;
+        margin-left: 4em;
+    }
 }
