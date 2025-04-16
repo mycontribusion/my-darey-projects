@@ -57,7 +57,8 @@ body {
 header > div {
     background-color: rgba(64,112,91,255);
     color: rgba(201,231,202,255);
-    margin-bottom: 20px;
+    padding: 80px 20px 80px 20px;
+    margin-bottom: 2em;
 }
 
 img {
