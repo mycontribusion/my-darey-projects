@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First JS Page</title>
+  </head>
+  <body>
+    <h1>Welcome, Ahmad!</h1>
+
+    <button onclick="saySalam()">Click Me!</button>
+    <div id="place-holder"></div>
+
+    <script>
+      function saySalam() {
+        alert("Assalamu Alaikum from JavaScript!");
+        console.log("Button was clicked!");
+      }
+
+      class Car {
+        startEngine(a) {
+            console.log("Engine started...");
+            document.getElementById("place-holder").innerHTML = "Assalamu Alaikum Ahmad";
+            
+        }
+
+        drive() {
+            this.startEngine(); // hides complexity
+            console.log("Car is moving...");
+        }
+        }
+
+        const myCar = new Car();
+        myCar.drive(); // Output: Engine started... \n Car is moving...
+
+    </script>
+  </body>
+</html>

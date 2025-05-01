@@ -1,0 +1,28 @@
+
+body {
+    display: flex;
+    justify-content: center;
+}
+body>div {
+    text-align: center;
+    margin-top: 100px;
+    width: 330px;
+}
+
+.buttons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+input {
+    width: 310px;
+}
+
+button {
+    width: 100px;
+    margin: 5px;
+}

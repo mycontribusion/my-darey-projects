@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dropdown Navigation</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+      background-color: #f8f8f8;
+      flex-wrap: wrap;
+    }
+
+    nav > div {
+      margin: 1em;
+      position: relative;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .categories {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .categories::after {
+        content: ' ▼'; /* different arrow */
+      font-size: 0.8em;
+    }
+
+    .categories:hover::after {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+
+    ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      min-width: 160px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    .categories:hover ul {
+      display: block;
+    }
+
+    ul li {
+      padding: 10px 16px;
+    }
+
+    ul li:hover {
+      background-color: #f0f0f0;
+    }
+
+    ul li a {
+      color: #333;
+      display: block;
+      width: 100%;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(5px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav > div {
+        margin: 0.5em 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="home"><a href="#">Home</a></div>
+
+    <div class="categories">
+      <a href="#">Categories</a>
+      <ul>
+        <li><a href="#">Islam</a></li>
+        <li><a href="#">Science</a></li>
+        <li><a href="#">Technology</a></li>
+      </ul>
+    </div>
+
+    <div class="contact"><a href="#">Contact</a></div>
+  </nav>
+
+</body>
+</html>
