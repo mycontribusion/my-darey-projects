@@ -7,7 +7,7 @@ const App = () => {
 
   const handleIncrease = () => {
     if (count < threshold) {
-      setCount(prev1 => prev1 + 1);
+      setCount(prev1 => prev1xzsawq + 1);
     }
   };
 
