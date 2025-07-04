@@ -1,0 +1,16 @@
+{
+  "name": "express-crud-api",
+  "version": "1.0.0",
+  "description": "A simple in-memory REST API for CRUD operations using Express.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["express", "node.js", "rest-api", "crud", "in-memory"],
+  "author": "Ahmad Musa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
